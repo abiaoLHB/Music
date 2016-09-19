@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="musicList" id="KGk-i7-Jjw" customClass="QQMusicListCell" customModule="QQ音乐" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jay.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="121-DT-BYc">
+                        <rect key="frame" x="15" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="ah3-dH-FSc"/>
+                            <constraint firstAttribute="height" constant="40" id="n2h-cd-DNK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小苹果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwm-q1-h1n">
+                        <rect key="frame" x="77" y="10" width="48" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="筷子哥哥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vn-0t-Co7">
+                        <rect key="frame" x="77" y="33" width="56" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5Vn-0t-Co7" firstAttribute="leading" secondItem="qwm-q1-h1n" secondAttribute="leading" id="0bH-Dg-uNs"/>
+                    <constraint firstItem="qwm-q1-h1n" firstAttribute="leading" secondItem="121-DT-BYc" secondAttribute="trailing" constant="22" id="6UN-HY-LfN"/>
+                    <constraint firstItem="5Vn-0t-Co7" firstAttribute="bottom" secondItem="121-DT-BYc" secondAttribute="bottom" id="CMv-UN-09K"/>
+                    <constraint firstItem="qwm-q1-h1n" firstAttribute="top" secondItem="121-DT-BYc" secondAttribute="top" id="DXH-RM-9Eq"/>
+                    <constraint firstItem="121-DT-BYc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Obh-Pb-4eq"/>
+                    <constraint firstItem="121-DT-BYc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yCm-ID-YOn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="iconIMV" destination="121-DT-BYc" id="v8T-bG-tdX"/>
+                <outlet property="singerNameLabel" destination="5Vn-0t-Co7" id="Vz5-Aj-5QR"/>
+                <outlet property="songNameLabel" destination="qwm-q1-h1n" id="lmB-fP-5pH"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jay.jpg" width="350" height="350"/>
+    </resources>
+</document>
